@@ -1,0 +1,230 @@
+html,body{  
+    min-height: 162vh;
+    font-size: 16px;
+    height:96%;
+    /* background-color:#D5A5F7; */
+    background-image: linear-gradient(#D5A5F7,#ffff,#D5A5F7);   
+    background-position:center;
+    background-size: cover;
+    /* background-image: url("animewallpaper.png");
+    background-position:top;
+    background-size:120% 200%; */
+    color:#5F1A4B;
+}
+
+
+.container{
+    height:96vh;
+    display:grid;
+    grid-template:repeat(6,1fr) reapeat(4,auto) repeat(2,1fr)/repeat(16,1fr);/*repeat(12,1fr)/repeat(16,1fr)*/
+    grid-template-areas:
+    "h h h h h h h h h h h h h h h h"
+    "h h h h h h h h h h h h h h h h"
+    "s s s s s s s s s s s s s s s s"
+    "s s s s s s s s s s s s s s s s"
+    "s s s s s s s s s s s s s s s s"
+    "s s s s s s s s s s s s s s s s"
+    "m m m m m m m m m m o o o o o o"
+    "m m m m m m m m m m o o o o o o"
+    "q q q q q q q q q q o o o o o o"
+    "q q q q q q q q q q o o o o o o"
+    "f f f f f f f f f f f f f f f f"
+    "f f f f f f f f f f f f f f f f";
+}
+
+
+.header{
+    grid-area: h;
+    background-color:#572B75;
+    color: #EDC8FF !important;
+}
+.header > div{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.search{
+    grid-area: s;
+    display:flex;
+    justify-content: center;
+}
+
+.search > div{
+    padding:0 1em;
+    margin:1em 0;
+    background-color:#654F75;
+    color: #DED5FF;
+    box-shadow: 20px 20px 25px 0px rgba(0, 0, 0, .5);
+    border-radius: 1em;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.search > div > div{
+    margin:0em 1em 2em 1em;
+}
+
+/* .main,.other,.search{
+    background-color:darkkhaki;
+} */
+
+.main{
+    grid-area: m;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.main > div{
+    padding:1em;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+    border-radius: 1em;
+    transition: .3s;
+    
+}
+
+.main > div:hover{
+    box-shadow: 10px 10px 100px 0 black;    
+}
+
+.other{
+    grid-area: o;
+    color:#F8E4F2 !important;
+}
+
+.other > div{
+    padding:.2em 1em;
+    display: flex;
+    flex-direction:column;
+}
+
+.other > div > div{
+    padding: 1em;
+    background-color:#8F48C2;
+    border-radius:.5em;
+    /* box-shadow: 20px 5px 20px 0px rgba(0, 0, 0, .5); */
+    margin:.2em;
+    display:flex;
+    align-items: center;
+    transition:.3s;
+}
+
+.other > div > div:hover{
+    position:relative;
+    transform: scale(1.06);
+    transform-origin: bottom;
+    box-shadow: 20px 5px 20px 0px rgba(0, 0, 0, .5);
+}
+
+.other > div > div > div{
+    padding: .2em;
+    display:flex;
+    flex-direction:column;
+    /* justify-content: space-around; */
+    height:200px;
+}
+.footer{
+    grid-area: f;
+    background-color:#572B75;
+    color:#EDC8FF !important;
+}
+
+.footer > div
+{   
+    padding:1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.quote{
+    grid-area: q;
+    margin:0 2em;
+    display:flex;
+}
+
+img{
+    border-radius:.2em;
+}
+
+.subs
+{
+    outline:none;
+    border:0;
+    border-radius: 2em;
+    font-size:16px;
+    line-height:1;
+    padding:16px 30px;
+    background-color:lightslategray;
+    color: #ffff !Important;
+    cursor: pointer;
+    transition: all .3 linear;
+}
+
+.subs:hover,.btnSearch:hover
+{
+    background-color:#D5A5F7;
+    color:#5F1A4B !important;
+}
+
+.subs:active,.btnSearch:active{
+    background-color: white;
+}
+
+.btnSearch
+{
+    outline:none;
+    border:0;
+    border-radius: 2em;
+    font-size:16px;
+    line-height:1;
+    padding:10px 15px;
+    background-color:lightslategray;
+    color: #ffff !Important;
+    cursor: pointer;
+    transition: all .3 linear;
+}
+
+input{
+    border:2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    Transition: .3s
+}
+
+input:focus{
+border-color:dodgerblue;
+box-shadow: 0 0 8px dodgerblue;
+}
+
+.navitem{
+    padding:1.43em;
+    transition:.3s;
+    border-radius:.3em;
+}
+.navitem:hover{
+    background-color: #D5A5F7;
+    color:#5F1A4B !important;
+}
+
+
+
+.logo{
+filter:brightness(0) invert(1);
+}
+
+
+.auth_date{
+    display: flex;
+    justify-content: space-between;
+    margin:1em 1em 1em 0em;
+}
