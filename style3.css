@@ -1,0 +1,97 @@
+html,body{
+    height: 100%;
+}
+
+.blog-container{
+    min-height: 100vh;
+    display:grid;   
+    grid-template:repeat(5,1fr)/repeat(5,1fr);
+    grid-template-areas:
+    "a a a a a"
+    "a a a a a"
+    "b b b b b"
+    "b b b b b"
+    "c c c c c"
+    ;
+}
+
+.nav{
+    font-size:2rem;
+    display:flex;
+    align-items:center;
+    width:90rem;
+    margin-right:auto;
+}
+
+.nav-child{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:50rem;
+}
+
+.header{
+    grid-area: a;
+    background-color:#572B75;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    color:#EDC8FF !important;
+}
+
+.body{
+    grid-area: b;
+    background-color:#D5A5F7;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    color:#5F1A4B;
+    background-image: linear-gradient(#D5A5F7,#ffff,#D5A5F7);   
+    background-position:center;
+    background-size: cover;
+}
+
+.footer{
+    grid-area: c;
+    background-color:#572B75;
+    color:#EDC8FF !important;
+}
+
+
+.footer > div
+{   
+    padding:1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.logo{
+    filter:brightness(0) invert(1);
+}
+
+
+.nav-hover{
+    transition:1s all;
+}
+.nav-hover:hover{
+    text-decoration: underline;
+    text-underline-offset:1rem;
+    cursor:pointer;
+}
+
+
+.mainimg{
+    transition:.5s;
+    position:relative;
+    bottom:3.7rem;
+}
+
+.mainimg:hover{
+    box-shadow:20px 5px 20px 0px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transform: scale(1.1);
+    bottom:2rem;
+}

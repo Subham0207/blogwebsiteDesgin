@@ -1,0 +1,25 @@
+.search_container{
+color:#F8E4F2 !important;
+grid-area:s;
+display:flex;
+flex-direction: column;
+align-items: center;
+/* justify-content: center; */
+}
+
+.search_container > div{
+    padding: 1em;
+    background-color:#8F48C2;
+    border-radius:.5em;
+    /* box-shadow: 20px 5px 20px 0px rgba(0, 0, 0, .5); */
+    margin:.2em;
+    display:flex;
+    align-items: center;
+    transition:.3s;
+}
+
+.flex-content-row{
+    margin: 1em;
+    display: flex;
+    flex-direction:column;
+}

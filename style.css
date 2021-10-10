@@ -16,7 +16,7 @@ html,body{
 .container{
     height:96vh;
     display:grid;
-    grid-template:repeat(6,1fr) reapeat(4,auto) repeat(2,1fr)/repeat(16,1fr);/*repeat(12,1fr)/repeat(16,1fr)*/
+    grid-template:repeat(12,auto)/repeat(16,1fr);/*repeat(12,1fr)/repeat(16,1fr)*/
     grid-template-areas:
     "h h h h h h h h h h h h h h h h"
     "h h h h h h h h h h h h h h h h"
