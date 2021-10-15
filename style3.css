@@ -84,6 +84,8 @@ html,body{
 
 
 .mainimg{
+    border:double black;
+    border-width: .3rem;
     transition:.5s;
     position:relative;
     bottom:3.7rem;
